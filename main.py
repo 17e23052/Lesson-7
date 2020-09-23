@@ -1,3 +1,4 @@
+'''This app calculates how many slices of pizza each person gets. It also calculates the remaining number of slices.'''
 print("---Welcome to Split my Pizza---")
 print("How many slices are on the pizza?")
 slices = int(input())
