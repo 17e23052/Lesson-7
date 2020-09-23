@@ -1,16 +1,10 @@
-print("---Welcome to Split My Bill---")
-print("What is the total bill?")
-bill_total = float(input())
+print("---Welcome to Split my Pizza---")
+print("How many slices are on the pizza?")
+slices = int(input())
 print("How many people are sharing?")
 people = int(input())
-print("What percentage tip would you like to leave?")
-tip_percentage = int(input())
 
-#percentage_decimal = tip_percentage / 100
-#tip_total = bill_total * percentage_decimal
-#bill_total = bill_total + tip_total
-bill_total = bill_total + (bill_total * (tip_percentage / 100))
-cost_per_person = bill_total / people
-
-print(f"Total bill including tip is £{bill_total}")
-print(f"Total cost per person is £{cost_per_person}")
+slices_each = slices // people
+remainder = slices % people
+print(f"There will be {slices_each} slices of pizza for each person.")
+print(f"There will be {remainder} slices remaining.")
