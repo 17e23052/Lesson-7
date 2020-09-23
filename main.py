@@ -6,9 +6,10 @@ people = int(input())
 print("What percentage tip would you like to leave?")
 tip_percentage = int(input())
 
-percentage_decimal = tip_percentage / 100
-tip_total = bill_total * percentage_decimal
-bill_total = bill_total + tip_total
+#percentage_decimal = tip_percentage / 100
+#tip_total = bill_total * percentage_decimal
+#bill_total = bill_total + tip_total
+bill_total = bill_total + (bill_total * (tip_percentage / 100))
 cost_per_person = bill_total / people
 
 print(f"Total bill including tip is £{bill_total}")
